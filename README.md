@@ -14,6 +14,6 @@ const validator = new Validator(myObject)
 validator
 .check("name")
 .rule((valueKey) => (!valueKey), `name should not be falsy`)
-.validate()
+.validate("There are validation errors found")
 
 ```
